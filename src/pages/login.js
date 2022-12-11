@@ -16,7 +16,7 @@ export default function Login() {
     const handleLogin = async (event) => {
         event.preventDefault();
         try{
-            await firebase.auth().signInWithEmailAndPassword(emailAddress);
+            await firebase.auth().signInWithEmailAndPassword(emailAddress, password);
             navigate(ROUTES.DASHBOARD);
         }
         catch(error){
