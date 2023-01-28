@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import Header from '../componennts/header';
-// import Sidebar from '../componennts/sidebar';
-import Timeline from '../componennts/timeline';
+import Header from '../components/header';
+import Sidebar from '../components/sidebar/sidebar';
+import Timeline from '../components/timeline';
 
 export default function Dashboard(){
     useEffect(()=> {
@@ -13,7 +13,7 @@ export default function Dashboard(){
             <Header />
             <div className="grid">
                 <Timeline />
-                {/* <Sidebar /> */}
+                <Sidebar />
             </div>
         </div>
     );
