@@ -1,4 +1,4 @@
-import {firebase, FieldValue} from '../lib/firebase';
+import { firebase, FieldValue } from '../lib/firebase';
 
 export async function doesUsernameExist(username) {
   const result = await firebase
@@ -8,6 +8,19 @@ export async function doesUsernameExist(username) {
     .get();
 
   return result.docs.length > 0;
+}
+
+export async function getUserByUsername(username) {
+  const result = await firebase
+    .firestore()
+    .collection('users')
+    .where('username', '==', username.toLowerCase())
+    .get();
+
+  return result.docs.map((item) => ({
+    ...item.data(),
+    docId: item.id
+  }));
 }
 
 // get user from the firestore where userId === userId (passed from the auth)
