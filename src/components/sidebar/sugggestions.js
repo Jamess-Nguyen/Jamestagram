@@ -17,11 +17,6 @@ export default function Suggestions({ userId, following, loggedInUserDocId }) {
       suggestedProfiles();
     }
   }, [userId]);
-  // hint: use the firebase service (call using userId)
-  // getSuggestedProfiles
-  // call the async function ^^^^ within useEffect
-  // store it in state
-  // go ahead and render (wait on the profiles as in 'skeleton')
 
   return !profiles ? (
     <Skeleton count={1} height={150} className="mt-5" />
