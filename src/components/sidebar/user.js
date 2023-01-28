@@ -4,9 +4,8 @@ import Skeleton from 'react-loading-skeleton';
 import { DEFAULT_IMAGE_PATH } from '../../constants/paths';
 
 export default function User({ username, fullName }) {
-  console.log(username, fullName);
   return !username || !fullName ? (
-    <div>Hi goku</div>
+    <Skeleton count={1} height={61} />
   ) : (
     <Link to={`/p/${username}`} className="grid grid-cols-4 gap-4 mb-6 items-center">
       <div className="flex items-center justify-between col-span-1">
