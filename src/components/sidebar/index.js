@@ -4,15 +4,13 @@ import Suggestions from './suggestions';
 import LoggedInUserContext from '../../context/logged-in-user';
 
 export default function Sidebar() {
-  const { user: { docId = '', fullName, username, userId, following } = {} } = useContext(
-    LoggedInUserContext
-  );
+  const username = "p";
+  const fullName = "e";
 
   return (
     <div className="p-4">
-        hi
-      <User username={username} fullName={fullName} />
-      <Suggestions userId={userId} following={following} loggedInUserDocId={docId} />
+      <User username={"p"} fullName={"e"} />
+      {/* <Suggestions userId={userId} following={following} loggedInUserDocId={docId} /> */}
     </div>
   );
 }

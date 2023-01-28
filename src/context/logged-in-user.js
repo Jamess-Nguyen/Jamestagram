@@ -1,9 +1,9 @@
 import { createContext } from 'react';
 
 const LoggedInUserContext = createContext({
-  "fullName": "John Doe",
-  "username": "johndoe",
-  "userId": "12345",
-  "following": ["54321", "67890", "09876"]
+  "fullName": "Peter anteater",
+  "username": "peter_anteater",
+  "userId": "MK4yxK1dFWXSp8lPK3P0is1wmyJ2",
+  "following": []
 });
 export default LoggedInUserContext;
