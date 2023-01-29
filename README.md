@@ -18,4 +18,5 @@ An Instagram web-application clone where users can create and interact with post
 - Firefox
 
 ## Demo
-<img src="https://user-images.githubusercontent.com/55639356/215297974-1666f61e-f533-4574-9151-da1afe8a1a06.gif" style="width: 500%; height: 500%;">
+https://user-images.githubusercontent.com/55639356/215298371-935325c3-06b2-461f-bff7-dec74ad4af6e.mp4
+
